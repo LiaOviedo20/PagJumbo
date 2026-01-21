@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: linear-gradient(90deg, #eb2427, #d61c1f);
+    padding: 15px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+
+.nav a {
+    color: white;
+    margin: 0 12px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.nav a:hover {
+    border-bottom: 2px solid #ffd700;
+}
+
+
+body {
+    padding-top: 140px;
+    background: #f4f6f8;
+}
+
+.seccion {
+    padding: 80px 60px;
+}
+
+.seccion h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 32px;
+    color: #0a7a3c;
+}
+
+.cards {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    width: 260px;
+    padding: 20px;
+    border-radius: 18px;
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.footer {
+    background: #111;
+    color: #eee;
+    margin-top: 80px;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    padding: 60px;
+}
+
+.footer-col h3 {
+    margin-bottom: 15px;
+    color: #ffd700;
+}
+
+.footer-col p {
+    line-height: 1.6;
+    font-size: 15px;
+}
+
+.footer-logo {
+    width: 150px;
+    margin-bottom: 15px;
+}
+
+.redes {
+    list-style: none;
+}
+
+.redes li {
+    margin-bottom: 10px;
+}
+
+.redes a {
+    color: #eee;
+    text-decoration: none;
+}
+
+.redes a:hover {
+    color: #ffd700;
+}
+
+.footer iframe {
+    width: 100%;
+    height: 180px;
+    border-radius: 12px;
+    border: none;
+}
+
+.footer-bottom {
+    background: #000;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+.subir {
+    display: inline-block;
+    margin-top: 10px;
+    color: #ffd700;
+    text-decoration: none;
+}
+
+@media (max-width: 900px) {
+    .footer-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .footer-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .seccion {
+        padding: 50px 20px;
+    }
+}
